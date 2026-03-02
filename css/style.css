@@ -1,8 +1,15 @@
 html {
-    filter: invert(1) hue-rotate(180deg);
-    background: #000;
+	filter: invert(1) hue-rotate(180deg);
+	background: #000;
 }
 
-img, video, iframe {
-    filter: invert(1) hue-rotate(180deg);
+img,
+video,
+iframe {
+	filter: invert(1) hue-rotate(180deg);
+}
+
+body {
+	background: #000;
+	color: #fff;
 }
