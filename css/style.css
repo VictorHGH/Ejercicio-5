@@ -23,11 +23,32 @@ body {
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
+}
 
-	p {
-		margin: auto;
-		padding-bottom: 15px;
-	}
+.card p {
+	margin: auto;
+	padding-bottom: 15px;
+}
+
+.site-header {
+	background: gray;
+	padding: 0.8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-title {
+	margin: 0;
+}
+
+.info-bar {
+	list-style: none;
+	margin: 0;
+	padding: 0.8rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 }
 
 
