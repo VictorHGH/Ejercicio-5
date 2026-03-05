@@ -50,3 +50,81 @@ body {
 	justify-content: center;
 	gap: 1rem;
 }
+
+
+   /* Variables de color para facilitar el cambio */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --card-bg: #f4f4f4;
+            --accent-color: #007bff;
+        }
+
+        /* Colores para el Modo Oscuro */
+        body.dark-mode {
+            --bg-color: #181a1b;
+            --text-color: #e8e6e3;
+            --card-bg: #242729;
+            --accent-color: #3794ff;
+        }
+
+        /* Estilos generales */
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Botón de Modo Oscuro en la esquina superior derecha */
+        .theme-toggle-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        #theme-button {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 20px;
+            border: 2px solid var(--accent-color);
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        #theme-button:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .header {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .site-logo-container img {
+            max-width: 100%;
+            height: auto;
+        }
