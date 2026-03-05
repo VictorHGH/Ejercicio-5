@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ejercicio 5 MODIFICADO 5 MARZO - Xochimilco</title>
-		<link href="css/style.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 5 - Xoc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="theme-toggle-container">
+        <button id="theme-button">Cambiar Modo</button>
+    </div>
+
+    <a href="https://www.xoc.uam.mx" class="site-logo-container" rel="home">
+        <img width="300" height="80" src="https://computo.xoc.uam.mx/archivos/conjunto-baseXoc.png" alt="Servicios de Cómputo UAM-X">
+    </a>
+
+    <ul class="header">
+        <li>
+            <script type="text/javascript">
+                var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                var f = new Date();
+                document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+            </script>
+        </li>
+        <li>
+            <div id="reloj"></div>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h1>Botón modo oscuro</h1>
+    <p>Usa el botón en la esquina superior derecha para alternar el tema de toda la página.</p>
+
+    <div class="card">
+        <img src="./imagenes/git.jpg" alt="Programador" class="img">
+        <p>Imagen de programador</p>
+    </div>
 
 
-	</head>
 
-	<body>
-
-		<a href="https://www.xoc.uam.mx" class="site-logo-container" rel="home" itemprop="url">
-			<img width="300" height="80" src="https://computo.xoc.uam.mx/archivos/conjunto-baseXoc.png"
-				data-src="https://computo.xoc.uam.mx/archivos/conjunto-baseXoc.png" class="default-logo lazy loaded"
-				alt="Servicios de Cómputo UAM-X" decoding="async"
-				data-srcset="https://computo.xoc.uam.mx/archivos/conjunto-baseXoc.png 1990w, https://computo.xoc.uam.mx/archivos/conjunto-baseXoc-300x80.png 300w, https://computo.xoc.uam.mx/archivos/conjunto-baseXoc-1024x274.png 1024w, https://computo.xoc.uam.mx/archivos/conjunto-baseXoc-768x206.png 768w, https://computo.xoc.uam.mx/archivos/conjunto-baseXoc-1536x411.png 1536w"
-				data-sizes="(max-width: 1990px) 100vw, 1990px" sizes="(max-width: 1990px) 100vw, 1990px"
-				srcset="https://computo.xoc.uam.mx/archivos/conjunto-baseXoc.png 1990w, https://computo.xoc.uam.mx/archivos/conjunto-baseXoc-300x80.png 300w, https://computo.xoc.uam.mx/archivos/conjunto-baseXoc-1024x274.png 1024w, https://computo.xoc.uam.mx/archivos/conjunto-baseXoc-768x206.png 768w, https://computo.xoc.uam.mx/archivos/conjunto-baseXoc-1536x411.png 1536w"
-				data-was-processed="true">
-		</a>
-		<ul class="header center">
-			<li><a>
-					<script
-						type="text/javascript"> var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"); var f = new Date(); document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()); </script>
-				</a></li>
-			<li><a>
-					<script
-						type="text/javascript"> function startTime() {today = new Date(); h = today.getHours(); m = today.getMinutes(); s = today.getSeconds(); m = checkTime(m); s = checkTime(s); document.getElementById('reloj').innerHTML = h + ":" + m + ":" + s; t = setTimeout('startTime()', 500);} function checkTime(i) {if (i < 10) {i = "0" + i;} return i;} window.onload = function () {startTime();} </script>
-					<div id="reloj"></div>
-				</a></li>
-		</ul>
-
-		<h1>Botton modo oscuro</h1>
-
-		<label for="dark">
-			Dark
-			<input id="dark" type="checkbox"></input>
-		</label>
-
-		<h2>Botton Modo Azul</h1>
-
-			<label for="blue">
-				Dark
-				<input id="blue" type="checkbox"></input>
-			</label>
-
-			<div class="card">
-				<img src="./imagenes/git2.jpg" alt="Programador" class="img">
-				<p>Imagen de programador. Falta imagen de analista</p>
-			</div>
-
-	</body>
-
+</body>
 </html>
